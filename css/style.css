@@ -1,0 +1,134 @@
+/*CSS from old page */
+.tp-nav-img {
+    width: 100% !important;
+    height: 60px;
+    background-color: #003B5A;
+}
+/********************************************************
+*********************************************************
+****************Summary page css ************************
+*********************************************************
+********************************************************/
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    /*margin-left: 60px;*/
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+/********************************************************
+*********************************************************
+**********Index page or Homepage css Only****************
+*********************************************************
+********************************************************/
+
+.workwithus {
+    border: 2px solid #fff;
+    padding: 4px 12px!important;
+    margin-top: 11px!important;
+    margin-right: 20px;
+}
+
+.nav>li>a {
+    color: #fff;
+    padding: 15px 18px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent!important;
+
+}
+.navbar-brand {
+    color: #fff;
+}
+.header.parallax-bg {
+    background: url('https://w-dog.net/wallpapers/2/7/475622874950421/hungary-budapest-budapest-town-night-panorama-buildings-house-river-bridge-lighting-lights.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 673px;
+
+}
+@media (max-width: 767px) {
+    .header.parallax-bg {
+        background-attachment: scroll;
+    }
+}
+.header-text-block{
+    display: block;
+    padding: 170px 170px 0px 170px;
+    text-align: center;
+}
+
+.header-text-block h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+}
+.header-text-block h3{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.header-text-block a{
+    padding: 9px 27px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.43;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.search-block {
+    display: block;
+    padding: 40px;
+}
+.search-block > .input-group > input {
+    display: block;
+    padding: 10px;
+    border-radius: 0px!important;
+}
+.search-block > .input-group > span > .btn {
+   
+    border-radius: 0px!important;
+}
