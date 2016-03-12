@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tripeasel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="all" href="https://tripeasel.com/assets/application-44ea78351fea0758d48b069181cd0c75e91815dcbeee362721df14f1481a01ad.css" />
+
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Theme style file -->
+    <link href="css/collab.css" rel="stylesheet">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5vEaQ+VogOBTiGPWoqIdLwt7K3GV2gk9R6lTIDQ7aOEK7Nq4Vi8ghMQ7XK4gh97CYZTtOJh/4Z0KnuShSSk1+w==" />
+ 
+</head>
+<body>
+
+
+<nav class="navbar navbar-default tp-nav-img" style="margin-bottom: 0px; border-radius:0px; border:0px;">
+  <div class="logo">
+  <a href="/">
+    <img src="https://tripeasel.com/assets/icon-white.png" width="30px" height="40px"; style="margin-top:10px; margin-left:10px; margin-right:10px; float: left;" /></a>
+  </div>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="width: 40%;">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <form class="new_itinerary" id="new_itinerary" action="/trips/211/itineraries" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="row">
+          <div class="col-sm-9" style="padding-right:0px; width:72% !important;">
+            <div class="input-group" style="width:100%; float: left; margin-left: 6px;">
+              <input type="hidden" name="place_type" class="place_type" value="Attraction" />
+              <input type="text" name="title" class="form-control" id="gmaps-input-address" placeholder="Place Name" style="margin-top: 10px;height: 35px;min-height: 0px;" data-step='3' data-intro='Type the name of a place or attraction you would like to suggest' required>
+              <div class="input-group-btn">
+                <button type="button" style="margin-top: 10px; height: 35px; color:#000;" class="btn btn-default dropdown-toggle each-type-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-step='4' data-intro='Select the type of place you are suggesting from this drop down menu. This could be an Attraction, Accommodation or Restaurant'>Attraction <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right tp-dropdown">
+                  <li><a class="each-type" data-type="Attraction" href="#">Attraction</a></li>
+                  <li><a class="each-type" data-type="Hotel" href="#">Accomodation</a></li>
+                  <li><a class="each-type" data-type="Restaurant" href="#">Restaurant</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+            <!-- <input type="text" name="title" class="form-control" id="gmaps-input-address" placeholder="Place Name" style="margin-top: 10px;height: 35px;min-height: 0px;" /> -->
+            <input type="hidden" name="visit_date" value="2004-01-04" class="visit_date_id" />
+            <input type="hidden" name="form_lat" class="form_lat" value="" />
+            <input type="hidden" name="form_lng" class="form_lng" value="" />
+          </div>
+          <div class="col-sm-3" style="padding-left: 3px;" data-step='5' data-intro='Hit Add Place to add the selection to the Itinerary section. '>
+                <input type="hidden" id="sampleUser" value="0">
+                  <button name="button" type="submit" class="light-blue-btn btn edit-profile-btn" id="add-place-btn" style="background:#7a7b4f; border-color: #7a7b4f;" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Adding....">
+                  <span class="glyphicon glyphicon-map-marker"></span> Add Place
+</button>               <!--<button type="submit" class="light-blue-btn btn edit-profile-btn" id="add-place-btn" style="background:#7a7b4f; border-color: #7a7b4f;" data-step='4' data-intro='And just add a place'><span class="glyphicon glyphicon-map-marker"></span> Add Place</button>-->
+          </div>
+        </div>
+</form>    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+        <!--
+        -->
+          <li style="position: relative;">
+            <div class="menu-highlight-block">
+                <a href="#" class="trip-details-btn top-nav-a" style="color: #fff;" data-intro="Edit high level details of the Trip" data-step='9'><span class="glyphicon glyphicon-align-left"></span> <b>Trip Details</b></a>
+                <div id="trip_details_id" class="trip-details" style="display: none;">
+                <h4 class="trip-panel-head"><b>Trip Details</b>
+            <a class="edit-trip-btn pull-right" data-url="/trips/211/edit" href="#"><span class="glyphicon glyphicon-pencil"></span><br/>Edit Trip</a>
+            </h4>
+          <div class="trip-panel-body">
+            <h5><b>Description</b></h5>
+            I want to go to India
+            <hr/>
+            <h5><b>Destinations</b></h5>
+              <span class="label label-default">Vietname</span> 
+            <hr/>
+            <h5><b>Total Number of days</b></h5>
+            From: Jan 04 2004      To: Jan 05 2004
+            <hr/>
+            <h5><b>Origin City</b></h5>
+            Vietnam
+          </div>
+        </div>
+            </div>
+        </li>
+            <li style="position: relative;">
+              <div class="menu-highlight-block">
+                <div class="new-image" style="display: none;"><img src="/assets/new_message.gif"/></div>
+              <a href="#" class="scout-chat top-nav-a" data-step='10' data-intro='Chat with collaborators as well as travel experts to help plan your Trip'><span class="glyphicon glyphicon-comment"></span> <b>Discussion</b></a>
+              <div id="discussion_panel_id" class="discussion-panel" style="display: none;">
+                <h4 class="discussion-panel-head"><b>Trip Discussion Forum</b></h4>
+                <div class="discussion-panel-body" data-url="/trips/211/messages">
+                    <div class="full-chat" data-url="/trips/211/messages">
+                        <script type="text/javascript">
+  function makeNotification() {
+        $('.new-image').show();
+        toastr.info('New message arrived.');
+        $('#chatAudio')[0].play();
+  }
+</script>
+
+<div class="each-chat " data-id="1303">
+  <div class="row" style="margin-top: 5px;">
+    <div class="col-sm-2">
+      <img src="/system/users/avatars/000/000/441/small/2015.Rajasthan.JF_%2858%29.JPG?1453010053" class="img-circle small-pic" />
+    </div>
+    <div class="col-sm-10">
+      <div class="name-text">Shyam Athreye</div>
+      <div class="chatter-box">
+        
+        <div style="margin-bottom: -25px;">
+         <p>hi there</p>
+         </div>
+      </div>
+      <div class="pull-right" style="font-size: 10px;">22 February 2016, 05:04</div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+.msg-highlight {
+  /*background-color: #F0EFEF;*/
+  border: 1px solid #fff;
+}
+</style>
+                    </div>
+                </div>
+                <div style="padding: 0px 10px;">
+                  <form class="new_message" id="new_message" action="/trips/211/messages" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                      <input type="hidden" name="senders_id" value="441" />
+                      <hr/>
+                      <div class="row">
+                      <div class="col-sm-10 col-centered">
+                        <textarea id="msg-textarea" placeholder="Type here... (Shift+Enter for new line)" name="message" class="form-control" style="margin-bottom: 10px; margin-top: 10px;" required></textarea>
+                      </div>
+                      <div class="col-sm-2 col-centered">
+                        <button type="submit" id="new_message_btn" class="btn btn-default"><i class="fa fa-paper-plane"></i> Send</button>
+                      </div>
+                    </div>
+</form>               </div>
+              </div>
+              </div>
+            </li>
+            <li style="position: relative;">
+             <div class="menu-highlight-block">
+              <a class="invite-btn invite edit" id="211" href="#" style="color: #fff;" data-intro="Invite and Chat with collaborators as well as travel experts to help plan your Trip." data-step='11'><i class="fa fa-user-plus" style="color:#fff;"></i><b> Invite</b></a>
+              </div>
+            </li>
+            <li style="position: relative;">
+             <div class="menu-highlight-block">
+              <a href="#" data-toggle="modal" data-target="#bulkEditItineraryModal" style="color: #fff;" class="control-panel top-nav-a" data-step='12' data-intro='Bulk change in itinerary for all dates.'><span class="glyphicon glyphicon-wrench" style="color: #fff;"></span> <b>Control Panel</b></a>
+              </div>
+            </li>
+          <!--<li style="position: relative;">
+              <a href="#" class="scout-feedback top-nav-a" style="color: #fff;" data-step='12' data-intro='Recent activities'><span class="glyphicon glyphicon-comment" style="color: #AC975E;"></span> <b>Notifications</b></a>
+              <div class="feedback-panel" style="display: none;">
+                <h4 class="feedback-panel-head"><b>Activities</b></h4>
+                <div class="feedback-panel-body">
+                  <div class="full-chat">
+                  </div>
+                </div>
+              </div>
+          </li>-->
+          <li data-intro="Welcome to Tripeasel's Unique Collaboration Tool. This is a quick tutorial to show you how you can start planning some great vacations on this tool. Ready to get started?" data-step='1'><a href="#" class="collaboration-tour-button btn light-blue-btn edit-profile-btn">Take a Tour</a>
+          </li>
+          <li>
+            <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown" style="margin-top: 12px;">
+          
+            <a href="#" class="dropdown-toggle tp-profile-link white-font" style="padding-top:5px !important; padding-bottom:0px !important; margin-left: 60px;" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/system/users/avatars/000/000/441/small/2015.Rajasthan.JF_%2858%29.JPG?1453010053" class="img-circle small-pic" style="border: 2px solid #ac975e" data-intro="All changes made on the Collaboration tool are automatically saved. You can navigate to your profile or logout from your account and get back to planning later on." data-step='13' data-position='left'/> <p style="text-align:center; font-size:11px; text-transform:capitalize; margin:0px; color:#fff;"> </p>
+            <!-- <span class="glyphicon glyphicon-align-justify" style="margin-left: 5px;"></span> -->
+            </a>
+            <ul class="dropdown-menu tp-dropdown" role="menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/profile">Profile</a></li>
+              <li><a href="https://goo.gl/forms/42tZmGyTYs" target="_blank">Report Bugs</a></li>
+              <li class="divider"></li>
+              <li><a href="/users/sign_out">Logout</a></li>
+            </ul>
+          </li>
+      </ul>
+
+
+          </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<nav class="navbar navbar-default sidebar" role="navigation" style="border-radius: 0px !important; height: 90%;background-color: #fff;width: 33%; overflow: scroll;">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+        <li class="disabled-itinerary" style="list-style-type: none; padding: 10px;">
+          <span style="color: #39393; text-transform: uppercase; font-size: 14px">Show for all dates</span>
+          <input class="blue-check" type="checkbox" id="show_all" /> 
+        </li>
+      <ul class="nav navbar-nav sortable" id="filter-results" style="width: 100%;padding-bottom: 40px;" data-intro="Everything you add will appear here in the same order. You can also DRAG and move items around in your itinerary!" data-step='6' data-position='right'>
+          <li class="disabled-itinerary">
+            <select class="form-control each-date each-action">
+              <option value="2004-01-04" selected="selected">Sun - 04 January 2004</option>
+              <option value="2004-01-05">Mon - 05 January 2004</option>
+            </select>
+          </li>
+          <li class="disabled-itinerary" style="">
+            <select class="form-control each-scouts each-action">
+              <option value="0">All</option>
+                <option value="441">Me</option>
+            </select>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<input type="hidden" id="initial-lat" value="11.3093342" />
+<input type="hidden" id="initial-lng" value="106.0667734" />
+<input type="hidden" id="trip-id" value="211" />
+<input type="hidden" id="available-dates" value="4-1-2004,5-1-2004" />
+<input type="hidden" id="start-date" value="2004-01-04" />
+<input type="hidden" id="current-user" value="441" />
+<input type="hidden" id="scout-ids" value="441" />
+
+<!--<div class="fixed-scout-image" style="position:fixed;bottom:0px; right:0px; z-index:99999">
+                <a class="invite-btn invite edit" id="211" href="#" style="background-color: #cdcdcd;font-size: 24px;margin-bottom: 26px;padding-bottom: 26px;">Invite Scouts</a>
+</div>-->
+
+<div class="fixed-scout-image" style="position:fixed;bottom:0px; right:100px; z-index:99999; background-color: #cdcdcd;">
+  <!-- <video height="300" id="localVideo"></video> -->
+  <!-- <div id="remotesVideos"></div> -->
+<script src="/assets/simplewebrtclatest-v2.js"></script>
+<script type="text/javascript" src="/assets/video.js"></script>
+</div>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3X84LAMiZT2btaZcJBbhGQjMQpIrD9cb";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+    <!--End of Zopim Live Chat Script-->
+
+    <script>
+      $zopim(function() {
+    $zopim.livechat.theme.setColor('#3B9FBD');
+    $zopim.livechat.theme.reload(); // apply new theme settings
+  });
+
+</script>
+
+
+<div id="map" data-step='7' data-intro="Long click on a location on the map to directly add an attraction. This will bring up a pop where you can fill in additional details about the attraction" data-position='left'>
+
+</div>
+
+<!-- 
+collab tool stasts *******************************************
+**************************************************************
+*************************************************************** -->
+<div class="buildpack-block">
+    <div class="col-md-12 bp-header">
+      <ul class="list-unstyled list-inline">
+        <li><a href ="#" class="btn-link build">Recommendation <i style="padding-left: 20px;"class="fa fa-chevron-up"></i></a></li>
+        <!-- <li><a href ="#" class="btn-link package">Package</a></li> -->
+        <li><a href ="#" class="btn-link actionbtn">
+</a></li>
+      </ul>
+    </div>
+<div class="allpackage" style="background-color: #ececec; display:none;">
+    <div class="col-md-12 packageblk" style="height: 350px;">
+      <ul class="list-unstyled list-inline">
+          <li>Budget : lorem </li>
+          <li>Duration : lorem</li>
+          <li>Tags : lorem</li>
+      </ul>
+      <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="well-none">
+            <div id="myCarousel1" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active col-md-12">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span style=""><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item col-md-12 ">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item col-md-12 ">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><img src="http://placehold.it/200x200" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span>
+                              Name : Arbind Jain  <a class="pull-right" href="#"><i class="fa fa-info-circle"></i></a> 
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> 
+                <a class="left carousel-control " href="#myCarousel1" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+
+                <a class="right carousel-control " href="#myCarousel1" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+            
+        </div>
+      </div>
+    </div>
+    <!-- end of page block -->
+    <div class="buildblk col-md-12" style="height: 320px;">
+      <div class=" col-xs-12 filter-trip text-center" data-toggle="buttons">
+          <label class="btn btn-filter">
+              <input name="name-edit" id="advanture" value="advanture" type="radio"><i class="fa fa-bed"></i>
+ Nearest Place
+          </label>
+          <label class="btn btn-filter">
+              <input name="name-edit" id="attraction" value="attraction" type="radio"> <i class="fa fa-bed"></i>
+ Nearest Hotels
+          </label>
+          <label class="btn btn-filter">
+              <input name="name-edit" id="beach" value="beach" type="radio"><i class="fa fa-bed"></i>Nearest Restaurant
+          </label>
+          <!-- <label class="btn btn-default">
+              <input name="name-edit" id="shopping" value="shopping" type="checkbox">Shopping
+          </label>
+          <label class="btn btn-default">
+              <input name="name-edit" id="food" value="food" type="checkbox">Food
+          </label>
+          <label class="btn btn-default">
+              <input name="name-edit" id="accomadation" value="accomadation" type="checkbox">Accomadation
+          </label> -->
+      </div>
+      <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="well-none">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active col-md-12">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0; */ padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit  <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a>  -->
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item col-md-12">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0; */ padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit  <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a>  -->
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item col-md-12">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0; */ padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit  <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a> --> 
+                            </span>
+                            </div>
+                            
+                            <div class="col-sm-4 col-xs-6"><img src="http://placehold.it/300x200/ffffff" alt="Image" class="img-responsive">
+                            <span class="add-btn-img"><a href="#" class="btn-link"><i class="fa fa-2x fa-plus-circle"></i></a></span>
+                            <span style="display:block; width: 100%; /*position: absolute; bottom: 0;*/  padding: 5px 2px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, <!-- <a class="" href="#"><i class="fa fa-info-circle"></i></a>  -->
+                            </span>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end for allblocks items -->
+</div>
+
+    <!-- end if collab  -->
+<!-- 
+    end of collab ***********************
+    *************************************
+    *********************************** -->
+
+<div class="modal fade" id="addItineraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="new_itinerary" id="new_itinerary" action="/trips/211/itineraries" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add Details</h4>
+        </div>
+        <div class="modal-body">
+          <!-- <input type="text" name="title" class="form-control" placeholder="Place Name" required/> -->
+          <!-- <input type="hidden" name="place_type" class="place_type" value="Attraction" /> -->
+          <input type="hidden" name="visit_date" value="2004-01-04" class="visit_date_id" />
+          <input type="hidden" name="lat" class="place_lat" value="" />
+          <input type="hidden" name="lng" class="place_lng" value="" />
+          <div class="input-group" style="width:100%; float: left; margin-bottom: 10px;">
+              <input type="hidden" name="place_type" class="place_type" value="Attraction" />
+              <input type="text" name="title" class="form-control" id="gmaps-input-address" placeholder="Place Name" style="margin-top: 10px;height: 35px;min-height: 0px;" required>
+              <div class="input-group-btn">
+                <button type="button" style="margin-top: 10px; height: 35px;" class="btn btn-default dropdown-toggle each-type-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attraction <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right tp-dropdown">
+                  <li><a class="each-type" data-type="Attraction" href="#">Attraction</a></li>
+                  <li><a class="each-type" data-type="Hotel" href="#">Accomodation</a></li>
+                  <li><a class="each-type" data-type="Restaurant" href="#">Restaurant</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+          <textarea placeholder="Additional Information" name="information" class="form-control"></textarea>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Image URL </label>
+            <input type="text" name="image_url" class="form-control" placeholder="Image Url" />
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Blog</label>
+            <input type="text" name="blog_link" class="form-control" placeholder="Link" />
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Wikipedia Link</label>
+            <input type="text" name="wiki_link" class="form-control" placeholder="Wikipedia Link"/>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-xs-6" style="margin-top:10px;">
+              <div class="input-append">
+                <input type="text" name="arrive_by" class="form-control timepicker" placeholder="Arrive By">
+              </div>
+            </div>
+            <div class="col-xs-6" style="margin-top:10px;">
+              <div class="input-append">
+                <input type="text" name="depart_at" class="form-control timepicker" placeholder="Depart At">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button name="button" type="submit" class="btn btn-default" id="addItineraryOnClick" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Adding....">Add</button>
+          <!-- <button type="submit" class="btn btn-default">Add</button> -->
+        </div>
+</form>    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="notFoundItineraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="new_itinerary" id="new_itinerary" action="/trips/211/itineraries" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sorry, Location not found. Please add details manually</h4>
+        </div>
+        <div class="modal-body">
+          <!-- <input type="text" name="title" class="form-control" placeholder="Place Name" required/>
+          <input type="hidden" name="place_type" class="place_type" value="Attraction" /> -->
+          <input type="hidden" name="visit_date" value="2004-01-04" class="visit_date_id" />
+          <input type="hidden" name="lat" class="place_lat" value="" />
+          <input type="hidden" name="lng" class="place_lng" value="" />
+          <div class="input-group" style="width:100%; float: left; margin-bottom: 10px;">
+              <input type="hidden" name="place_type" class="place_type" value="Attraction" />
+              <input type="text" name="title" class="form-control" id="gmaps-input-address" placeholder="Place Name" style="margin-top: 10px;height: 35px;min-height: 0px;" required>
+              <div class="input-group-btn">
+                <button type="button" style="margin-top: 10px; height: 35px;" class="btn btn-default dropdown-toggle each-type-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attraction <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right tp-dropdown">
+                  <li><a class="each-type" data-type="Attraction" href="#">Attraction</a></li>
+                  <li><a class="each-type" data-type="Hotel" href="#">Accomodation</a></li>
+                  <li><a class="each-type" data-type="Restaurant" href="#">Restaurant</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+          </div>
+          <textarea placeholder="Address" name="address" class="form-control" required></textarea>
+          <textarea placeholder="Additional Information" name="information" class="form-control"></textarea>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Image URL </label>
+            <input type="text" name="image_url" class="form-control" placeholder="Image Url" />
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Blog</label>
+            <input type="text" name="blog_link" class="form-control" placeholder="Link" />
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <label>Wikipedia Link</label>
+            <input type="text" name="wiki_link" class="form-control" placeholder="Wikipedia Link"/>
+          </div>
+          </br>
+          <div class="row">
+            <div class="col-xs-6" style="margin-top:10px;">
+              <div class="input-append">
+                <input type="text" name="arrive_by" class="form-control timepicker" placeholder="Arrive By">
+              </div>
+            </div>
+            <div class="col-xs-6" style="margin-top:10px;">
+              <div class="input-append">
+                <input type="text" name="depart_at" class="form-control timepicker" placeholder="Depart At">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button name="button" type="submit" class="btn btn-default" id="addItineraryOnClickWhenNotFound" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Adding....">Add</button>
+          <!--<button type="submit" class="btn btn-default">Add</button>-->
+        </div>
+</form>    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="editItineraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Edit Place and Details</h4>
+          </div>
+          <div id="editItinerary">
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bulkEditItineraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel">Edit Place and Details</h4>
+  </div>
+  <div class="modal-body">
+    <select class="form-control" id="select-date">
+            <option value="2004-01-04" selected="selected">Sun - 04 January 2004</option>
+            <option value="2004-01-05">Mon - 05 January 2004</option>
+      </select>
+      <div id="select-itinerary">
+        <select class="form-control" id="change-itinerary">
+          <option value="">Select a Place to edit</option>
+          <optgroup label="Attractions">
+          </optgroup>
+          <optgroup label="Hotels">
+          </optgroup>
+          <optgroup label="Restaurant">
+          </optgroup>
+        </select>
+      </div>
+      <div id="bulkEditItinerary">
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addDirectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" id="directionForm">
+
+    </div>
+  </div>
+</div>
+
+<!-- Login model -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8ebaidif//OpxPO7Yt2fjbWAdmCCXt1bqwsZRusZGv8d+xpya9hflz53zMPg+Fxg32+wKY/7NfvmPK7HlgtH5Q==" />
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login To Tripeasel</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="field">
+                        <input class="form-control" placeholder="Enter Email" required="required" type="email" value="" name="user[email]" id="user_email" />
+                    </div>
+                    </br>
+                    <div class="field">
+                        <input autocomplete="off" class="form-control" placeholder="Enter Password" required="required" type="password" name="user[password]" id="user_password" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="forgot-password" href="/users/password/new">Forgot password?</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button name="button" type="submit" class="btn btn-default" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Logging in....">LOGIN</button>
+                    <!-- <button type="submit" class="btn btn-default">Login</button> -->
+                </div>
+            </div>
+</form>        </div>
+    </div>
+
+    <div class="modal fade" id="loginModalNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="col-md-12 col-xs-12">
+                    <div class="feature-list campaign-bar-pop">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <p class="text-header">Sign In</p>
+                        
+                        <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3/pqs51EB9i7ANpusr4+5onBb7w9pjM3ZSlrTD0DlEYz56pILgOnvCyz5RYwm/0L4y6p9TAD25coHtzNQBHJXA==" />
+                            <span style="color:#f00;"></span>
+                            <input class="form-control login-box" placeholder="Enter Email" required="required" type="email" value="" name="user[email]" id="user_email" />
+                            <input autocomplete="off" class="form-control login-box" placeholder="Enter Password" required="required" type="password" name="user[password]" id="user_password" />
+                            <button name="button" type="submit" class="login-home btn btn-default" data-disable-with="&lt;span style=&#39;color:#000&#39;&gt;&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Logging in....&lt;/span&gt;">LOGIN</button></br></br>
+</form>                        <div class="login-below-text">
+                            <a style="color: #fff;" href="/users/password/new">Forgot password?</a> |
+                            <a style="color: #fff;" href="/users/sign_up">SignUp</a>
+                        </div>
+                        <div class="signup-separator">
+                            <h6 class="text">or</h6>
+                            <hr>
+                        </div>
+                        <div class="login-social-icons">
+                            <div class="row">
+                                <!-- <div class="col-md-12">
+                                    <a href="/users/auth/facebook" class="btn btn-block btn-social btn-facebook">
+                                        <span class="fa fa-facebook"></span> Sign in with Facebook
+                                    </a>
+                                </div> -->
+                                <div class="col-md-12">
+                                    <a href="/users/auth/google_oauth2" class="btn btn-block btn-social btn-google">
+                                        <span class="fa fa-google-plus"></span> Sign in with Google
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <!-- Subscriber message after signup -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Thanks, We will get back to you soon.</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message after 5 invitation -->
+    <div class="modal fade" id="inviteScoutLimitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Uh-oh, you have already reached out to 5 Travel Experts!</br></br>
+                        We will notify you as soon as we have a confirmation.</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home page plan trip -->
+    <div class="modal fade" id="planTripSuccessModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="thank-you-pop">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Thank You!</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>
+                    Thank you for reaching out to us! </h5>
+                   <p> We will get in touch with you at the earliest to plan an epic trip for you!</p>
+                    <p>Feel free to review and make changes to this trip on your Tripeasel Profile.</p>
+                     <p>Your login credentials have been sent to your email id.</p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- signup modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="material" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="dTQDNhszOBXZ4g7/XxYt3HSBzJ6ix6vLjFRXT+GTwPOZKcPNqHSYcU5RMYfdM+4xHm4K169iQ2vBY+DOnIGd6Q==" />
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign up with Tripeasel as Blogger</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="field">
+                        <!--<input class="form-control" placeholder="Enter Username" required="required" type="text" name="user[username]" id="user_username" />-->
+                    </div>
+                    <div class="field">
+                        <input class="form-control" placeholder="Enter Full Name" required="required" type="text" name="user[name]" id="user_name" />
+                    </div>
+                    <!-- <div class="field">
+                        <select class="form-control" name="user[gender]" id="user_gender"><option value="Male">Male</option>
+<option value="Female">Female</option></select>
+                    </div>
+                    
+                    <div class="field">
+                        <input class="form-control" placeholder="Enter City" required="required" type="text" name="user[location]" id="user_location" />
+                    </div>-->
+                    <div class="field">
+                        <input class="form-control" placeholder="Enter Email" required="required" type="email" value="" name="user[email]" id="user_email" />
+                    </div>
+                    <div class="field">
+                        <input autocomplete="off" class="form-control" placeholder="Enter Password (minimum 8 characters)" required="required" type="password" name="user[password]" id="user_password" />
+                    </div>
+                    <div class="field">
+                        <input autocomplete="off" class="form-control" placeholder="Password Confirmation" required="required" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+                    </div>
+                    <div class="field">
+                        <input value="Scout" type="hidden" name="user[role]" id="user_role" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button name="button" type="submit" class="btn btn-tripeasel" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Sigining up....">Sign up</button>
+                    <!-- <button type="submit" class="btn btn-tripeasel">Sign Up</button> -->
+                </div>
+            </div>
+</form>        </div>
+    </div>
+
+    <div class="modal fade" id="scoutListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel" style="text-align:center;">Invite Travel Expert & Friends</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="askQuestionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel"  style="text-align: center;color: #5BC0DE;">Ask a Question</h3>
+            <!-- <h4 class="modal-title" id="myModalLabel" style="text-align:center;">Ask Question</h4> -->
+          </div>
+          <div class="modal-body">
+            <div class="ask-question">
+  </br>
+
+<!--<a class="back" style="float: left !important;" href="/forum/questions">Back to forum</a>
+</br></br>-->
+
+<!-- <h3 style="text-align: center;color: #5BC0DE;">Ask a Question</h3> -->
+  <form class="new_question" id="new_question" action="/forum/questions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="s2gQUY158jtXRa02R2oYYb0s5cDKvtT6ywydmvv7zcNfddCqPj5SX8D2kk7FT9uM18MjiccbPFqGOyobhumQ2Q==" />
+  <div class="field">
+    <input value="441" type="hidden" name="question[user_id]" id="question_user_id" />
+  </div>
+  <div class="field">
+    <textarea placeholder="Type your question here.." rows="5" cols="50" style="width: 100%;min-height: 50%;font-size: 16px;" required="required" name="question[content]" id="question_content">
+</textarea>
+  </div>
+    <div class="field">
+      <h3 style="text-align: center;color: #5BC0DE;">Add Topic</h3>
+      
+        <input placeholder="Ex. Backpacking, Solo Traveller etc" required="required" type="text" name="question[topic_attributes][subject]" id="question_topic_attributes_subject" />
+        <input value="441" type="hidden" name="question[topic_attributes][user_id]" id="question_topic_attributes_user_id" />
+    </div>
+  <!--<div class="field">
+  </div>-->
+  <div class="actions">
+    <button name="button" type="submit" class="login-home btn btn-default" data-disable-with="&lt;span style=&#39;color:#000&#39;&gt;&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Adding....&lt;/span&gt;">Add Question</button>
+  </div>
+</form>
+</div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+<div class="modal fade" id="createItineraryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form class="new_trip" id="new_trip" action="/trips" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Plan your Trip</h4>
+          </div>
+          <div class="modal-body">
+            <div class="destinations-wrapper">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Destination</label>
+                    <input class="form-control destinations" type="text" placeholder="Ex: Bangalore" name="destinations[]" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <label>Origin City</label>
+                        <input class="form-control" placeholder="Ex. Thailand" required="required" type="text" name="trip[origin_city]" id="trip_origin_city" />
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Projected Dates</label>
+              <div class="input-daterange input-group" id="datepicker">
+                <input class="form-control" placeholder="Start Date" required="required" type="date" name="trip[start_date]" id="trip_start_date" />
+                <span class="input-group-addon">To</span>
+                <input class="form-control" placeholder="End Date" required="required" type="date" name="trip[end_date]" id="trip_end_date" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Traveller Count</label>
+              <div class="row">
+                  <div class="col-md-6">
+                    <input class="form-control" placeholder="Adults" min="1" max="99" type="number" name="trip[adult_count]" id="trip_adult_count" />
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control" placeholder="Children" min="0" max="99" type="number" name="trip[child_count]" id="trip_child_count" />
+                  </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Trip Details</label>
+              <textarea class="form-control" placeholder="Give a high level picture of what you want to do." name="trip[trip_details]" id="trip_trip_details">
+</textarea>
+            </div>
+
+            <div class="field">
+              <label>Approximate Budget per Person</label>
+              <input class="form-control" placeholder="Ex. $500 (in Dollars)" type="text" name="trip[budget_per_person]" id="trip_budget_per_person" />
+            </div>
+
+            <div class="field">
+              <label>Contact Details</label>
+              <div class="row">
+                  <div class="col-md-6">
+                        <input class="form-control" placeholder="Ex. john@mail.com" value="shyamathreye@outlook.com" required="required" type="email" name="trip[email]" id="trip_email" />        
+                  </div>
+                  <div class="col-md-6">
+                    <input class="form-control" placeholder="Ex. +91-9876543210" required="required" type="text" name="trip[phone]" id="trip_phone" />
+                  </div>
+              </div>
+            </div>
+
+            <!--<div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"><button id="add-destinations" class="btn btn-default">Add Destination</button></div>
+            </div>
+            <div class="field">
+              <label>Confirm Date</label>
+            </div>-->
+            
+            <!--<div class="field">
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Adventure</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Nature</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Culture</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Backpacking</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Spirituality</label>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Attractions</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Food</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Leisure</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Luxury</label><br />
+                        <input class="gray-check" value="apple" id="apple" name="destinations[]" type="checkbox">
+                        <label for="apple"> Nightlife</label>
+                    </div>
+                </div>
+            </div>-->
+
+            <!--<div class="field">
+                <br />
+                    <div class="collection-check-box">
+                    </div>
+            </div>-->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button name="button" type="submit" class="btn btn-default" data-disable-with="&lt;i class=&#39;fa fa-spinner fa-spin&#39;&gt;&lt;/i&gt; Saving your trip...">Save Details</button>
+          </div>
+        </div>
+</form>      </div>
+    </div>
+
+<style type="text/css">
+    .pac-container { z-index:2000 !important; }
+</style>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+<script src="/assets/jquery.geocomplete.min.js"></script>
+<script type="text/javascript">
+    // $("#testgeo").geocomplete();
+    $("#trip_origin_city").geocomplete();
+    $(".destinations").geocomplete();
+</script>
+
+<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            $("#addItineraryModal").on("hidden.bs.modal", function(){
+                $("input[type=text]").val("");
+                $("textarea").val("");
+            });
+        });
+</script>
+
+
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="collab-footer">
+    <div class="finalize-btn">
+      <!-- <a href="/trips/211" target="_blank" data-intro="Once your Trip is planned to your satisfaction, you can hit the Finalize trip button to view complete Trip Summary and download your itineray in PDF form." data-step='14' data-position='top'>Finalize Trip</a> -->
+      <a href="/trips/newshow/211" target="_blank" data-intro="Once your Trip is planned to your satisfaction, you can hit the Finalize trip button to view complete Trip Summary and download your itineray in PDF form." data-step='14' data-position='top'>Finalize Trip</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="itineraryDetailsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" id="itineraryDetailsData">
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="editTripModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+
+      $(document).ready(function(){
+
+            
+          $(".build").click(function(){
+            $(".allpackage").slideToggle(function(){
+             /* $(".buildblk").show();
+              $(".packageblk").hide();*/
+            }); 
+
+              $('.fa-chevron-up').toggleClass('fa-chevron-down');
+            
+            });
+          $(".package").click(function(){
+              $(".buildblk").hide();
+              $(".packageblk").show();
+              $(".allpackage").show();
+            });
+
+          $(".build").click(function(){
+              $(".packageblk").hide();
+              $(".buildblk").show();
+              $(".allpackage").show();
+
+            });
+
+      });
+
+      $(document).ready(function() {
+  $('#myCarousel').carousel({
+  interval: 0
+  })
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+      //alert("slid");
+  });
+     $('#myCarousel1').carousel({
+  interval: 0
+  })
+    
+    $('#myCarousel1').on('slid.bs.carousel', function() {
+      //alert("slid");
+  });
+    
+    
+});
+     </script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyAxwfgbvC_PJxk4TODeMNOar7DA4560Lng"></script>
+  <script src="https://tripeasel.com/assets/application-17e0e8632b1f8c94877820a3ae4d9266fbde4b6943b020832377efea286f6f93.js"></script>
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67019595-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            $(".collaboration-tour-button").click(function() {
+                introJs().start();
+            });
+
+            $("#sampleAddPlaceId").click(function() {
+                alert('You cannot add places in sample itinerary.');
+            });
+        });
+</script>
+</body>
+</html>

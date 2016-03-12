@@ -212,3 +212,19 @@
    
     border-radius: 0px!important;
 }
+.filter-trip > .btn-default.active{
+    background-color: #000 !important;
+    color: #fff!important;
+    border-color: #8c8c8c!important;
+}
+/*trip page css*/
+.toolfooter {
+    float: left;
+    color: #fff!important;
+    background-color:#3B9FBD;
+    padding: 10px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    width:100%;
+
+}
