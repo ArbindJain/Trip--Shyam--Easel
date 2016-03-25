@@ -1,0 +1,463 @@
+/*======================================
+=            NO GUTTER CODE            =
+======================================*/
+
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/*CSS from old page */
+.tp-nav-img {
+    width: 100% !important;
+    height: 60px;
+    background-color: #003B5A;
+}
+html {
+    overflow: none;
+}
+
+
+/********************************************************
+*********************************************************
+**********Index page or Homepage css Only****************
+*********************************************************
+********************************************************/
+
+
+.btn-request {
+    background-color: #ABD251!important;
+    color: #fff;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.btn-request:hover{
+    color: #fff;
+}
+
+.navbar {
+
+    padding-top: 10px!important;
+}
+.nav>li>a {
+    color: #fff;
+    padding: 15px 28px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent!important;
+
+}
+.navbar-brand {
+    color: #fff;
+}
+.header.parallax-bg {
+    /*background: url('../images/header.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;*/
+    background: url(../images/header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 673px;
+
+}
+
+
+
+@media (max-width: 767px) {
+    .header.parallax-bg {
+        background-attachment: scroll;
+    }
+}
+.header-text-block{
+    display: block;
+    padding: 170px 170px 0px 170px;
+    text-align: center;
+}
+
+.header-text-block h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+}
+.header-text-block h3{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.header-text-block a{
+    padding: 10px 16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.43;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.add-on .input-group-btn > .btn {
+    background-color: #ABD251!important;
+    border-color: #ABD251!important;
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+}
+
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.search-block {
+    display: block;
+    padding: 100px 40px 0px 40px;
+}
+.search-block > .input-group > input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px!important;
+}
+.search-block > .input-group > span > .btn {
+   
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    color: #fff;
+}
+.filter-trip > .btn-default.active{
+    background-color: #000 !important;
+    color: #fff!important;
+    border-color: #8c8c8c!important;
+}
+.explore {
+    display: block;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+.explore > a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*Destionation section classes*/
+.section-header {
+    display: block;
+    text-align: center;
+    padding: 50px 0px;
+
+}
+.section-header > h2  {
+    text-align: center;
+    color: #000;
+
+}
+
+.section-header > hr {
+    width: 80px;
+    height: 2px;
+    background-color: #000;
+
+    text-align: center;
+}
+
+.inside-wrapper{
+    display: block;
+    margin-left:   auto!important;
+    margin-right: auto!important;
+}
+.image-holder-des {
+    margin-top: 66px;
+    position: relative!important;
+
+}
+.im-hold {
+    margin-top: 66px;
+
+}
+.meta {
+    display: block;
+    position: relative!important;
+}
+
+.image-holder-des > div > p  {
+    
+    position: absolute!important;
+    top: 22px;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #000;
+    left:50px;
+
+}
+.im-hold > div > p  {
+    
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.image-holder-des > div > a {
+    
+    position: absolute!important;
+    top: 32%;
+    left: 156px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.holder-footer > p {
+    
+    position: absolute!important;
+    
+    padding: 12px 12px;
+    background-color: #fff;
+    color: #000;
+    left:40px;
+
+}
+.image-bar {
+    position: relative;
+    display: block;
+    width: auto;
+    padding: 5px 0px 0px 110px;
+
+}
+
+.image-bar > div {
+    position: relative;
+    display: block;
+    width: auto;
+    padding: 0px 3px 0px 0px;
+
+}
+.seealldes {
+    display: block;
+    text-align: center;
+    padding: 80px 0px 0px 0px;
+}
+.seealldes > a {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 26px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.collab-holder {
+    margin-top: 66px
+
+}
+.collab-holder >  .col-md-6 > p {
+    text-align: left;
+    font-size: 16px;
+    padding: 0px 20px;
+
+}
+.forum-holder {
+    margin-top: 66px
+
+}
+.forum-holder > .col-md-4 {
+    
+
+}
+.forum-wrapper {
+   border: 2px solid #000!important;
+    padding: 40px 30px;
+    min-height: 264px!important;
+
+}
+.forum-wrappers {
+   border: 2px solid #000!important;
+    padding-top: 33%;
+    min-height: 264px!important;
+
+}
+
+/*Slider code*/
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: .5;
+  font-size: 20px;
+  color: #ABD251;
+  text-align: center;
+  text-shadow: none;
+}
+.carousel-control.left {
+  background-image: none;
+  color: #ABD251;
+  left: -20px;
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  color: #ABD251;
+  right: -20px;
+}
+
+.carousel-control {
+  padding-top:8.5%;
+  width:5%;
+}
+
+/*.carousel-inner > .item {
+    width: 90%!important;
+    margin: 0 auto;
+    }*/
+.carousel-inner > .active > .row > div > span {
+  display: block;
+  padding: 5px 10px 0px 0px;
+}
+/*end of slider code*/
+
+.img-center{
+    margin: 0 auto;
+}
+
+.slider-qot {
+    width: 100%;
+}
+.sld-qoutes {
+    display:   block;
+    /*padding-right: 40px;
+    padding-left: 80px;*/
+    font-size: 16px;
+    width: 70%!important;
+    float: left;
+    margin-top: 20px;
+}
+
+.qoot > i{
+width: 15%!important;
+float: left
+}
+.qoot > .fa-quote-right {
+margin-top: 80px;
+padding-right: 30px;
+}
+.qoot > .fa-quote-left {
+
+padding-left: 20px;
+}
+.name-pyp {
+    display: block;
+    width: 100%;
+    padding-left: 20px!important;
+}
+
+.view-btn {
+    border: 2px solid;
+    font-weight: bold;
+}
+.view-btn:hover {
+    background-color: #fff;
+    border-color: #000; 
+    color: #000;
+}
+.read-media > a {
+    text-decoration: none;
+}
+
+.com-tra {
+    padding: 0px 8%!important;
+}
+
+.com-tra > p {
+    text-align:center!important;
+}
+
+.trav-wrapper {
+    overflow: hidden;
+    padding: 0px 10%;
+    margin-bottom: 10px!important;
+}
+.block-line > li > a{
+    display: block;
+    padding: 0px 50px;
+}
+.block-line-a > li > a{
+    display: block;
+    padding: 0px 80px;
+}
+.footer-back {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.footer-back > a {
+    color: #fff;
+}
+
+.block-line > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.block-line-a > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.block-line {
+    padding: 50px 0px;
+}
+.block-line-a  {
+    padding: 20px 0px 40px 0px;
+}
+/*Nav Bar code*/
+.navbar {
+    /*background: #474747;*/
+    min-height: 66px;
+}
+
+.container > .navbar-header{
+    margin-top: -8px;
+    opacity: 1;
+}
+.navbar-changecolor {
+    background: #474747!important;;
+    -webkit-transition: background-color 1200ms linear;
+    -moz-transition: background-color 1200ms linear;
+    -o-transition: background-color 1200ms linear;
+    -ms-transition: background-color 1200ms linear;
+    transition: background-color 1200ms linear;
+    opacity: 0.9;
+}
+.btn-request > strong {
+    opacity: 1!important;
+}
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 9%;
+    z-index: 99999999999999999;
+    background-color: #4B4E55;
+}
+.xross {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 20px;
+    z-index: 99999999999999999;
+
+}
